@@ -7,6 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/pedidos', (req, res) => {
     const pedidos = req.body;
     console.log(pedidos);
+    console.log(pedidos);
 
     // Enviar os pedidos como resposta para o navegador
     res.send(JSON.stringify(pedidos));
